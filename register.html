@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body class="center">
+    <div class="frame">
+        <div class="titlediv">
+            <div class="backbutton">
+
+            </div>
+            <div class="title">
+
+            </div>
+        </div>
+
+        <div class="formouter">
+          <div class="formtopic">
+            <div class="arrowout center"><div class="arrow"><a href="index.html">&lArr;</a></div></div>
+            <h2>Register Now &nbsp; &nbsp; &nbsp; </h2>
+          </div>
+          <div class="formcontent">
+            <div class="pic"><img src="images/register.png" alt="register page image."></div>
+            <div class="form">
+                <form action="privecypolicy.html" method="POST">
+                    <div class="input"><label for="username">Username</label>
+                        <input type="text" name="username" id="username"></div>
+
+                        <div class="input"><label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname"></div>
+
+                        <div class="input"><label for="lname">Last name</label>
+                            <input type="text" name="lname" id="lname"></div>
+
+                        <div class="input"><label for="email">Email</label>
+                            <input type="email" name="email" id="email"></div>
+
+                        <div class="input"><label for="password">Password</label>
+                            <input type="password" name="password" id="password"></div>
+                            
+                        <div class="input"><label for="repassword">Re enter the Password</label>
+                            <input type="password" name="repassword" id="repassword"></div>
+                            
+                        <div class="input"><label for="phonenumber">Phone Number</label>
+                            <input type="tel" name="phonenumber" id="phonenumber"></div>
+
+                        <div class="input"><label for="birthday">Birth Day</label>
+                            <input type="date" name="birthday" id="birthday"></div>
+
+                        <div class="input" id="genderselector">
+                            <h2>Gender</h2>
+                            <input type="radio" name="gender" value="male" id="male"> <label id="ml" for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female"> <label id="fl" for="female">Female</label>
+                        </div>
+
+                        <div class="input" id="countrySelector"><label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="sl">Sri Lanka</option>
+                                <option value="in">India</option>
+                                <option value="jn">Japan</option>
+                                <option value="pk">Pakistath</option>
+                                <option value="Ch">China</option>
+                            </select>
+                        </div>
+
+                        <div class="input" id="ageree">
+                            <p><input type="checkbox" name="agree"> I agree with <a id="agree" href="privecypolicy.html" target="_blank">Terms and Conditions.</a></p>
+                        </div>
+
+                        <a id="reg" href="products.html" target="_blank"><div class="button center"><div class="center reg">Register</div></div></a>
+                        <div class="center login"><p>* I you already have an account <a id="login" href="#">login here</a>.</p></div>
+
+                </form>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</body>
+
+<style>
+    *{border: 0;
+    margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    body{
+        height: 100vh;
+    }
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formouter{
+        border: black solid 2.5px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .formcontent ,  .formtopic{display: flex;
+        flex-direction: row;
+    }
+    .pic{height: 400px;}
+    .pic img{ height: 400px; margin-bottom: -5;}
+    .formtopic{background-color: black; padding: 10px;}
+    .formtopic h2{color: white; text-align: center; width: 100%;}
+    .arrowout{ border: white 2px solid;
+    height: 28px; width:28px; border-radius: 50%;}
+    .arrow a {color: white; text-decoration: white; font-weight: 600;}
+    form{ padding:0 13px}
+    .input{ padding-top: 5px;}
+    form h2{width: 120px; display: inline-block; font-size: medium; font-weight: 500;}
+    #male{padding-left: 20px;}
+    .input label{width: 120px; display: inline-block;}
+    #fl , #ml{width:50px ;}
+    input , select{border-radius: 5px;}
+
+    #birthday , #country{ width:154px; display: inline-block;}
+
+    form .button{width: 100%; background-color: black; border-radius: 8px; padding: 4px; margin-top: 9px;}
+    form .button:hover{width: 100%; background-color: rgb(23, 22, 22); border-radius: 8.5px; padding: 4px; margin-top: 9px;}
+    form #reg{color: white; text-decoration: none;}
+    #agree , #login{color: rgb(54, 148, 255); text-decoration: none; font-weight: 600;}
+    .login p{text-align: center; font-size: small; padding-top: 7px;}
+
+</style>
+</html>
